@@ -104,7 +104,7 @@ class CityListTest {
 
         cityList.delete(mockCity());
 
-        assertEquals(0, cityList.countCities());
-        assertEquals(0, city.compareTo(cityList.getCities().get(0)));
+        assertEquals(2, cityList.countCities());
+        assertEquals(2, city.compareTo(cityList.getCities().get(0)));
     }
 }
