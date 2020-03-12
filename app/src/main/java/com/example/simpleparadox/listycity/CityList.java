@@ -78,5 +78,10 @@ public class CityList {
         return cities.size();
     }
 
+    public boolean findCity(){
+        hasCity(new City("Edmonton","AB"));
+        return true;
+    }
+
 
 }

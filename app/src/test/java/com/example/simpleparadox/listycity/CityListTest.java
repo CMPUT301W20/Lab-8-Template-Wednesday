@@ -97,6 +97,7 @@ class CityListTest {
     @Test
     void testCityByName(){
         CityList cityList = mockCityList();
-        assertTrue(cityList.findcity(new City("Edmonton", "AB")));
+        cityList.add(new City("Edmonton","AB"));
+        assertTrue(cityList.findCity());
     }
 }
