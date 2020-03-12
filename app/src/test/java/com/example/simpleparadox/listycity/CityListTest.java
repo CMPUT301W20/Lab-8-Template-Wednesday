@@ -30,6 +30,7 @@ class CityListTest {
     }
     @Test
     void makeFunnyTest(){
+        CityList cityList = mockCityList();
         assertEquals(2, cityList.countCities());
 
     }
