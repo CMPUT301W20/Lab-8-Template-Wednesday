@@ -81,5 +81,9 @@ public class CityList {
     /**
      * Reset the city list
      */
-    public void reset(){}
+    public void reset(){
+        if (cities.size()!=0){
+            cities.removeAll(cities);
+        }
+    }
 }
