@@ -83,8 +83,7 @@ public class CityList {
      * @return
      *      integer sum of the parameters
      */
-    //public int addinator5000(int i, int j){
-        //return i+j;
-        //return 0;
-    //}
+    public int addinator5000(int i, int j){
+        return i+j;
+    }
 }
