@@ -77,4 +77,13 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    /**
+     * Deletes the last added city
+     */
+    public void deleteLast(){
+        cities.remove(cities.size()-1);
+    }
+
+
 }
