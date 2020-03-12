@@ -73,7 +73,9 @@ public class CityList {
      * Delete all entries from citylist
      */
     public void deleteAll() {
-
+        while (cities.size() > 0) {
+            cities.remove(cities.size() - 1);
+        }
     }
 
     /**
