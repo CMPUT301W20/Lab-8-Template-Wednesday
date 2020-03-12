@@ -1,3 +1,5 @@
+Name: Vanika 
+# Adding to test intial connection of travis ci simce yml and gitignore file already exists
 language: android
 jdk: oraclejdk8
 
