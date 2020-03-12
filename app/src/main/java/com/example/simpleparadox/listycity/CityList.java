@@ -77,4 +77,11 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    public boolean findCity(){
+        hasCity(new City("Edmonton","AB"));
+        return true;
+    }
+
+
 }
