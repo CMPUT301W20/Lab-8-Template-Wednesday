@@ -95,10 +95,10 @@ class CityListTest {
     }
 
     @Test
-    void testDuplicateCity() {
+    void testClearCities() {
         CityList cityList = mockCityList();
-        mockCity().duplicateCity(mockCity());
-        assertEquals(0,  mockCity().compareTo(cityList.getCities().get(1)));
+        cityList.clearCities();
+        assertEquals(0, cityList.countCities());
 
 
     }
