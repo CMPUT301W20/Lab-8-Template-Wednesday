@@ -31,6 +31,10 @@ class CityListTest {
     @Test
     void makeFunnyTest(){
         CityList cityList = mockCityList();
+        City city1 = new City("Yellowknife", "Northwest Territories");
+        cityList.add(city1);
+        City city2 = new City("Charlottetown", "Prince Edward Island");
+        cityList.add(city2);
         assertEquals(2, cityList.countCities());
 
     }
