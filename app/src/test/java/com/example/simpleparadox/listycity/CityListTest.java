@@ -93,7 +93,7 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
-
+    //this test should pass now
     @Test
     void testCityByName(){
         CityList cityList = mockCityList();
