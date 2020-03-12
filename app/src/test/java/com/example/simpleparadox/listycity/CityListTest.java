@@ -93,4 +93,11 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
+
+    @Test
+    void testAddinator5000(){
+        CityList cityList = mockCityList();
+
+        assertEquals(4, cityList.addinator5000(2,2));
+    }
 }
