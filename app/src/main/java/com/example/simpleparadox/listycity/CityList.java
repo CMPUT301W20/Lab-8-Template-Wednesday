@@ -77,4 +77,9 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    /**
+     * Reset the city list
+     */
+    public void reset(){}
 }
