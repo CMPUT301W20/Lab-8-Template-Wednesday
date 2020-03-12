@@ -93,4 +93,13 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
+
+    @Test
+    void testDuplicateCity() {
+        CityList cityList = mockCityList();
+        mockCity().duplicateCity(mockCity());
+        assertEquals(0,  mockCity().compareTo(cityList.getCities().get(1)));
+
+
+    }
 }
