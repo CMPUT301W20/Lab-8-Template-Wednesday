@@ -77,4 +77,14 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    /**
+     * Returns the sum of the two input ints
+     * @return
+     *      integer sum of the parameters
+     */
+    //public int addinator5000(int i, int j){
+        //return i+j;
+        //return 0;
+    //}
 }

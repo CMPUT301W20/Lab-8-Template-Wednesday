@@ -96,8 +96,8 @@ class CityListTest {
 
     @Test
     void testAddinator5000(){
-        assertEquals(4, addinator5000(2,2));
+        CityList cityList = mockCityList();
 
-        
+        assertEquals(4, cityList.addinator5000(2,2));
     }
 }
