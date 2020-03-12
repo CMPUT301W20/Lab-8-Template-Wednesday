@@ -98,7 +98,7 @@ class CityListTest {
         CityList cityList = mockCityList();
         City city = new City("Miami","Florida");
         cityList.add(city);
-        assertEquals(0,cityList);
+        assertEquals(1,cityList);
         
     }
 }
