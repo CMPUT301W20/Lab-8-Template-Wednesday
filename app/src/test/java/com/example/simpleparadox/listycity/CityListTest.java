@@ -16,6 +16,11 @@ class CityListTest {
     private City mockCity() {
         return new City("Edmonton", "Alberta");
     }
+    
+    @Test
+    void testSimpleAddition(){
+        assertEquals(2, 1+1);
+    }
 
     @Test
     void testAdd() {
