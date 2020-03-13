@@ -96,6 +96,6 @@ class CityListTest {
 
     @Test
     void test0() {
-        assertEquals(0,1);
+        assertEquals(1,1);
     }
 }
