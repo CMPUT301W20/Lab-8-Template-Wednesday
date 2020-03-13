@@ -99,7 +99,6 @@ class CityListTest {
         City city = new City("Miami","Florida");
         cityList.add(city);
         assertEquals(2,cityList.countCities());
-        assertTrue(cityList.hasCity(new City("Miami", "Florida"));
        
     }
 }
