@@ -88,6 +88,12 @@ class CityListTest {
     }
 
     @Test
+    void testFail(){
+        City city = new City("city","province");
+        assertEquals("city", city.getCityName());
+    }
+
+    @Test
     void testCountCities() {
         CityList cityList = mockCityList();
 
