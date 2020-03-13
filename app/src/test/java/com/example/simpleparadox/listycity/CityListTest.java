@@ -98,7 +98,8 @@ class CityListTest {
         CityList cityList = mockCityList();
         City city = new City("Miami","Florida");
         cityList.add(city);
-        assertTrue(cityList.hasCity(new City("Miami", "Florida"));
         assertEquals(1,cityList.countCities());
+        assertTrue(cityList.hasCity(new City("Miami", "Florida"));
+       
     }
 }
