@@ -69,6 +69,10 @@ public class CityList {
         }
     }
 
+    public void clear() {
+
+    }
+
     /**
      * Return the size of the city list
      * @return
