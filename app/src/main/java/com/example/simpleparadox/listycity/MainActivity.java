@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
 
         cityList.setAdapter(cityAdapter);
 
+        System.out.println("Hello World");
+
 //        dataList = new ArrayList<>();
 //        dataList.addAll(Arrays.asList(cities));
 //
