@@ -12,8 +12,8 @@ public class CityList {
 
     /**
      * This adds a city to the list if the city does not exist
-     * @param city
-     *      This is a candidate city to add
+     *
+     * @param city This is a candidate city to add
      */
     public void add(City city) {
         if (hasCity(city)) {
@@ -24,8 +24,8 @@ public class CityList {
 
     /**
      * This returns a sorted list of cities
-     * @return
-     *      Return the sorted list
+     *
+     * @return Return the sorted list
      */
     public List<City> getCities() {
         List<City> list = cities;
@@ -35,10 +35,9 @@ public class CityList {
 
     /**
      * This method checks to see if a city already exists in the list
-     * @param city
-     *      City to check
-     * @return
-     *      Return true if the city exists already
+     *
+     * @param city City to check
+     * @return Return true if the city exists already
      */
     public boolean hasCity(City city) {
         for (City c : cities) {
@@ -53,8 +52,8 @@ public class CityList {
 
     /**
      * Delete the city from the list if it is there
-     * @param city
-     *      Candidate city to delete
+     *
+     * @param city Candidate city to delete
      */
     public void delete(City city) {
         if (!hasCity(city)) {
@@ -62,7 +61,7 @@ public class CityList {
         }
 
         for (City c : cities) {
-            if (c.compareTo(city) == 0){
+            if (c.compareTo(city) == 0) {
                 cities.remove(c);
                 break;
             }
@@ -71,10 +70,14 @@ public class CityList {
 
     /**
      * Return the size of the city list
-     * @return
-     *      Size of city list
+     *
+     * @return Size of city list
      */
     public int countCities() {
+        return cities.size();
+    }
+
+    public int countDistinctCities() {
         return cities.size();
     }
 }
