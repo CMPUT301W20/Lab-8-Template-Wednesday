@@ -38,6 +38,7 @@ licenses:
     - 'android-sdk-license-.+'
 
 before_install:
+  - chmod +x gradlew
   # Accept sdk licenses
   - yes | sdkmanager "platforms;android-29"
 
