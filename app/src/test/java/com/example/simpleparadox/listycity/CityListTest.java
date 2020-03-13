@@ -13,6 +13,11 @@ class CityListTest {
         return cityList;
     }
 
+    private int mockAddNumbers(int a, int b){
+        int c = a + b;
+        return c;
+    }
+
     private City mockCity() {
         return new City("Edmonton", "Alberta");
     }
@@ -92,5 +97,11 @@ class CityListTest {
         CityList cityList = mockCityList();
 
         assertEquals(1, cityList.countCities());
+    }
+
+    @Test
+    void testAddition() {
+        int test = mockAddNumbers(2,3);
+        assertEquals(5,test);
     }
 }
