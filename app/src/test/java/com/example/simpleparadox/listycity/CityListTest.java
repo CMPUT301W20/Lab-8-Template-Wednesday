@@ -65,7 +65,7 @@ class CityListTest {
     void testDeleteCity() {
         CityList cityList = mockCityList();
 
-        City city = new City("", "British Columbia");
+        City city = new City("Victoria", "British Columbia");
         cityList.add(city);
 
         assertEquals(2, cityList.countCities());
@@ -92,5 +92,12 @@ class CityListTest {
         CityList cityList = mockCityList();
 
         assertEquals(1, cityList.countCities());
+    }
+    @Test
+    void testAmericanCity(){
+        CityList cityList = mockCityList();
+        City city = new City("Miami","Florida");
+        cityList.add(city);
+        assertTrue(cityList.hasCity(new City("Miami", "Florida"));
     }
 }
