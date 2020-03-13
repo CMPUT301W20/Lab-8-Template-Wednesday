@@ -70,7 +70,7 @@ public class CityList {
     }
 
     public void clear() {
-
+        cities.clear();
     }
 
     /**
