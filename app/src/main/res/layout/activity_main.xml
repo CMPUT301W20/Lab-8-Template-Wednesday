@@ -10,8 +10,16 @@
     <ListView
         android:id="@+id/city_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="438dp">
 
     </ListView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="304dp"
+        android:gravity="center"
+        android:text="xudong9"
+        android:textSize="100dp" />
 
 </LinearLayout>
