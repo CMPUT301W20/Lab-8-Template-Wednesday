@@ -18,6 +18,10 @@ class CityListTest {
     }
 
     @Test
+    void testAddNumbers() {
+        assertEquals(4,2+2);
+    }
+    @Test
     void testAdd() {
         CityList cityList = mockCityList();
 
