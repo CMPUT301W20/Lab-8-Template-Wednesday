@@ -77,4 +77,9 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    public void insertAt(int index, City c)
+    {
+        // does something
+    }
 }
