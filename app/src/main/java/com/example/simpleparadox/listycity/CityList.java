@@ -77,4 +77,16 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    /**
+     * Clears a city;
+     */
+    public void clear() {
+        if (!cities.isEmpty()) {
+            cities.clear();
+        }
+        else {
+            throw new RuntimeException("Can't clear empty list!");
+        }
+    }
 }
