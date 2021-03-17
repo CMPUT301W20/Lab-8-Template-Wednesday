@@ -77,4 +77,8 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    public City getCity(City city) {
+        return cities.get(cities.indexOf(city));
+    }
 }
