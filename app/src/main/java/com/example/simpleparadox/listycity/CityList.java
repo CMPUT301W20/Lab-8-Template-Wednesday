@@ -69,6 +69,14 @@ public class CityList {
         }
     }
 
+    public void clear() {
+        int i = countCities() - 1;
+        while (i >= 0) {
+            cities.remove(i);
+            i--;
+        }
+    }
+
     /**
      * Return the size of the city list
      * @return
