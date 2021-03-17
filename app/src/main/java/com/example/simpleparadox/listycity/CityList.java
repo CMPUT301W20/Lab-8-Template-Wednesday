@@ -77,4 +77,12 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    /**
+     * This deletes all cities from the list
+     */
+    public void removeAll(){
+        cities.clear();
+    }
+
 }
