@@ -77,4 +77,14 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    /**
+     * Inserts a city at a given index
+     * @param index where we want to insert
+     * @param city the item we want to insert
+     */
+    public void insertAt(int index, City city)
+    {
+        //TODO: build logic
+    }
 }
