@@ -100,6 +100,6 @@ class CityListTest {
     void testFail() {
         CityList cityList = mockCityList();
 
-        assertNotEquals(1,cityList.countCities());
+        assertEquals(1,cityList.countCities());
     }
 }
