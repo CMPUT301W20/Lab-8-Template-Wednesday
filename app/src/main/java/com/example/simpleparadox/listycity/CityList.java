@@ -79,8 +79,6 @@ public class CityList {
     }
 
     public void clear() {
-        while (this.getCities().size() != 0);{
-            cities.remove(0);
-        }
+        cities.clear();
     }
 }
