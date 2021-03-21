@@ -93,4 +93,30 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
+
+    @Test
+    void testUpdateCity() {
+        CityList cityList = mockCityList();
+        City mock = cityList.getCities().get(0);
+
+        assertEquals(1, cityList.countCities());
+        assertEquals("Edmonton", mock.getCityName());
+
+        cityList.update(mock,"newEdmonton");
+
+        assertEquals("newEdmonton", mock.getCityName());
+        assertEquals(1, cityList.countCities());
+    }
+
+    @Test
+    void testUpdateException() {
+        CityList cityList = mockCityList();
+        City mock = cityList.getCities().get(0);
+        cityList.delete(mock);
+
+        assertThrows(IllegalArgumentException.class, () -> {
+            cityList.update(mock, "newEdmonton");
+        });
+    }
+
 }

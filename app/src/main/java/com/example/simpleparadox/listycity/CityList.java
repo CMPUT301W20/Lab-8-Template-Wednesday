@@ -77,4 +77,22 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    /**
+     * Update the city from the list if it is there
+     * @param city
+     *      Candidate city to delete
+     */
+    public void update(City city, String newName) {
+        if (!hasCity(city)) {
+            throw new IllegalArgumentException();
+        }
+
+        for (City c : cities) {
+            if (c.compareTo(city) == 0){
+                c.setCity(newName);
+                break;
+            }
+        }
+    }
 }
