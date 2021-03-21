@@ -78,7 +78,7 @@ public class CityList {
         return cities.size();
     }
 
-    public ArrayList<City> getCitiesInProvince(){
+    public ArrayList<City> getCitiesInProvince(String province_name){
 
     }
 }

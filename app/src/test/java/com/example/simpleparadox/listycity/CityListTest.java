@@ -111,7 +111,7 @@ class CityListTest {
 
         ArrayList<City> province_list = new ArrayList();
 
-       province_list = mockCityList().getCitiesInProvince();
+       province_list = mockCityList().getCitiesInProvince("KE");
 
         assertEquals("Mombasa", province_list.get(0).getCityName());
         assertEquals("Nairobi", province_list.get(1).getCityName());
