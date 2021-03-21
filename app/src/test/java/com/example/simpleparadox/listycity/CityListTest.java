@@ -93,4 +93,13 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
+
+    @Test
+    void testGetPosition() {
+        CityList cityList = mockCityList();
+
+        City mockCity = new City("Edmonton", "Alberta");
+
+        assertEquals(0, cityList.getPosition(mockCity));
+    }
 }
