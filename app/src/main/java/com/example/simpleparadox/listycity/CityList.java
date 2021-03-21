@@ -77,4 +77,14 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    public ArrayList<City> getCitiesInProvince(String province_name){
+        ArrayList<City> province_list = new ArrayList<>();
+        for (City c : cities) {
+            if (c.getProvinceName().equals(province_name)) {
+                province_list.add(c);
+            }
+        }
+        return province_list;
+    }
 }
