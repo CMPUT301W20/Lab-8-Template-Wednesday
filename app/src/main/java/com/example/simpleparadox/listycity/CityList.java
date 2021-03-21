@@ -84,7 +84,7 @@ public class CityList {
      *     True if empty, false otherwise
      */
     public boolean isEmpty() {
-        return true;
+        return (this.countCities() == 0);
     }
 
 }
