@@ -77,4 +77,22 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    /**
+     * Finds the position of the city in the city list
+     * @param city
+     * @return Index of city in the list (-1 if not there)
+     */
+    public int getPosition(City city) {
+        int position = 0;
+
+        for(City c : cities) {
+            if (c.getCityName().equals(city.getCityName()) &&
+                    c.getProvinceName().equals(city.getProvinceName())) {
+                return position;
+            }
+            position++;
+        }
+        return -1;
+    }
 }
