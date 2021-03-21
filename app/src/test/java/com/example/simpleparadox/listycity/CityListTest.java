@@ -100,4 +100,5 @@ class CityListTest {
 
         assertEquals(100, cityList.countCities());
     }
+
 }
