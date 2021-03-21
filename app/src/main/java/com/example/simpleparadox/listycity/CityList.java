@@ -80,6 +80,6 @@ public class CityList {
 
     public void clean(){
 
-        //cities.removeAll(cities);
+        cities.removeAll(cities);
     }
 }
