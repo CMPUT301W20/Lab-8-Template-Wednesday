@@ -96,8 +96,10 @@ class CityListTest {
 
     // Lab Exercise Failed Test Case
     @Test
-    void failTestCountCities() {
+    void TestCountCitiesAfterAdding() {
         CityList cityList = mockCityList();
+
+        cityList.add(new City("Toronto", "ON"));
 
         assertEquals(2, cityList.countCities());
     }
