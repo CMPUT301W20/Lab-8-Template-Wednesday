@@ -94,6 +94,7 @@ class CityListTest {
         assertEquals(1, cityList.countCities());
     }
 
+    // Submission test case
     @Test
     void testGetPosition() {
         CityList cityList = mockCityList();
