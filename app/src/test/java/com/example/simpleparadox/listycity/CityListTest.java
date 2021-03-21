@@ -96,7 +96,7 @@ class CityListTest {
 
     @Test
     void testIsEmpty() {
-        CityList cityList = mockCityList();
+        CityList cityList = new CityList();
         assertEquals(true, cityList.isEmpty());
         City city = new City("Edmonton", "AB");
         cityList.add(city);
