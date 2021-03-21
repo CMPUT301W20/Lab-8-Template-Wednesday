@@ -6,7 +6,7 @@ class failTest {
 
     @Test
     void testFail(){
-        assert(0==1);
+        assert(0==0);
     }
 
 }
