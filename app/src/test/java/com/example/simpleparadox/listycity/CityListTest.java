@@ -93,4 +93,25 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
+
+    @Test
+    void testGetCityByPos() {
+        CityList cityList = mockCityList();
+        City city = new City("Victoria", "British Columbia");
+        cityList.add(city);
+
+        //Checks getting first city
+        int pos1 = 1;
+        assertTrue(cityList.getCityByPos(pos1).equals(city));
+
+        //Checks that the method throws an exception if the pos is out of range
+        int pos2 = 2;
+        assertThrows(IllegalArgumentException.class, () -> {
+            cityList.getCityByPos(pos2);
+        });
+        int pos3 = -1;
+        assertThrows(IllegalArgumentException.class, () -> {
+            cityList.getCityByPos(pos3);
+        });
+    }
 }
