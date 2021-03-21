@@ -77,4 +77,14 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    public City getCityByPos(int pos) {
+        int index = cities.size() - 1;
+        if (pos >= 0 && pos <= index) {
+            return cities.get(pos);
+        }
+        else {
+            throw new IllegalArgumentException();
+        }
+    }
 }
