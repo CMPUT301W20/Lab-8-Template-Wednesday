@@ -82,7 +82,7 @@ public class CityList {
         ArrayList<City> province_list = new ArrayList<>();
         for (City c : cities) {
             if (c.getProvinceName().equals(province_name)) {
-                //province_list.add(c);
+                province_list.add(c);
             }
         }
         return province_list;
