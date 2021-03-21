@@ -97,7 +97,7 @@ class CityListTest {
     void testCountCities2() {
         CityList cityList = mockCityList();
 
-        assertEquals(2, cityList.countCities());
+        assertEquals(3, cityList.countCities());
     }
 
 
