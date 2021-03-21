@@ -5,6 +5,9 @@ env:
   global:
     - ANDROID_TARGET=android-22
     - ANDROID_ABI=armeabi-v7a
+    - ANDROID_API_LEVEL = 30
+    - ANDROID_BUILD_TOOLS_VERSRION = 30.0.0
+    - QEMU_ANDIO_DRV = none
 
 android:
   components:
