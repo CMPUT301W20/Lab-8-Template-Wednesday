@@ -103,15 +103,18 @@ class CityListTest {
         City msa_city = new City("Mombasa", "KE");
         City nai_city = new City("Nairobi", "KE");
 
-        assertFalse(mockCityList().hasCity(msa_city));
-        assertFalse(mockCityList().hasCity(nai_city));
+        assertFalse(cityList.hasCity(msa_city));
+        assertFalse(cityList.hasCity(nai_city));
 
-        mockCityList().add(msa_city);
-        mockCityList().add(nai_city);
+        cityList.add(msa_city);
+        cityList.add(nai_city);
 
-        ArrayList<City> province_list = new ArrayList();
+        assertTrue(cityList.hasCity(msa_city));
+        assertTrue(cityList.hasCity(nai_city));
 
-       province_list = mockCityList().getCitiesInProvince("KE");
+        ArrayList<City> province_list;
+
+        province_list = cityList.getCitiesInProvince("KE");
 
         assertEquals("Mombasa", province_list.get(0).getCityName());
         assertEquals("Nairobi", province_list.get(1).getCityName());

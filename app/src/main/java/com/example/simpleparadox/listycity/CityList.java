@@ -83,7 +83,6 @@ public class CityList {
         for (City c : cities) {
             if (c.getProvinceName().equals(province_name)) {
                 //province_list.add(c);
-
             }
         }
         return province_list;
