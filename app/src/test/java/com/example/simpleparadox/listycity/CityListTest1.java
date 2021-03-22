@@ -10,7 +10,7 @@ public class CityListTest1 {
         cityList.add(mockCity());
         return cityList;
     }
-//
+///
     private City mockCity() {
         return new City("Edmonton", "Alberta");
     }
