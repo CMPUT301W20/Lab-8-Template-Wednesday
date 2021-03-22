@@ -93,4 +93,13 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
+    @Test
+    void testCheckEmpty() {
+        CityList cityList = mockCityList();
+        assertFalse(cityList.CheckEmpty());
+
+        cityList.delete(mockCity());
+        assertTrue(cityList.CheckEmpty());
+    }
+
 }
