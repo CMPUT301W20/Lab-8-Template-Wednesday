@@ -93,4 +93,11 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
+
+    @Test
+    void testPrepLab() {
+
+        City city = new City("Victoria", "British Columbia");
+        assertEquals(city.addingTwoNumber(5, 6), 11);;
+    }
 }
