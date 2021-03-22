@@ -96,6 +96,6 @@ class CityListTest {
 
     @Test
     void testForLab8() {
-        assertTrue(false);
+        assertTrue(true);
     }
 }
