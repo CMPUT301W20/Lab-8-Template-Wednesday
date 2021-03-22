@@ -98,6 +98,6 @@ class CityListTest {
     void testGetProvince(){
         CityList cityList = mockCityList();
 
-        assertEquals("Alberta", cityList.getProvince());
+        assertEquals("Alberta", cityList.getProvince(cityList.getCities().get(0)));
     }
 }
