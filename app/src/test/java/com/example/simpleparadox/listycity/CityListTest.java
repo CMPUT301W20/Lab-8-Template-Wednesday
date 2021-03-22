@@ -99,6 +99,6 @@ class CityListTest {
         String cityName = "Edmonton";
         City testCity = new City("Edmonton", "Alberta");
         CityList cityList = mockCityList();
-        assertEquals(cityList.getCityByName(cityName), testCity);
+        assertTrue(cityList.getCityByName(cityName).equals(testCity));
     }
 }
