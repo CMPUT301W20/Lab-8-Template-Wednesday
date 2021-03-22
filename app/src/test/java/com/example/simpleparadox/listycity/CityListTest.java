@@ -93,4 +93,19 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
+
+    @Test
+    void testGetFirstProvince() {
+        CityList cityList = mockCityList();
+
+        //base case
+        assertThrows(IllegalArgumentException.class, () -> {
+            cityList.getFirstProvince();
+        });
+        City city = new City("Edmonton", "Alberta");
+        cityList.add(city);
+
+        //Test with one
+        assertEquals(cityList.getFirstProvince(), "Alberta");
+    }
 }
