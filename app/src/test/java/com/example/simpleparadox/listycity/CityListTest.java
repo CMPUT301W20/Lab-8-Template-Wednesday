@@ -97,6 +97,6 @@ class CityListTest {
     @Test
     void testNotHaveCity(){
         CityList cityList = mockCityList();
-        assertTrue(!cityList.hasCity(mockCity()));
+        assertFalse(cityList.hasCity(mockCity()));
     }
 }
