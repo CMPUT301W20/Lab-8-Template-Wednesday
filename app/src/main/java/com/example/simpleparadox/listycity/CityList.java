@@ -78,6 +78,6 @@ public class CityList {
         return cities.size();
     }
     public City getPosition(int i ){
-        return new City("random", "random2");
+        return cities.get(i);
     }
 }
