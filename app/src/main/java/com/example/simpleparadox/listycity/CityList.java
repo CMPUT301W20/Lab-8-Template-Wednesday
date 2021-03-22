@@ -77,4 +77,7 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+    public City getPosition(int i ){
+        return new City("random", "random2");
+    }
 }
