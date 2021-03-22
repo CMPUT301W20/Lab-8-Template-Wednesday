@@ -93,4 +93,11 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
+
+    @Test
+    void testMaxCities() {
+        CityList cityList = mockCityList();
+
+        assertEquals(10, cityList.maxCities());
+    }
 }
