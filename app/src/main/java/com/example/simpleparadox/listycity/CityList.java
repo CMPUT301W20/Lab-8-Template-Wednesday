@@ -87,7 +87,7 @@ public class CityList {
         //if (cities.size() < 5) {
         //    return false;
         //} else {
-            return true;
+            return false;
         //}
     }
 }
