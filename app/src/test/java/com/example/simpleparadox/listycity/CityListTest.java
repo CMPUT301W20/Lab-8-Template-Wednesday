@@ -100,6 +100,6 @@ class CityListTest {
         CityList cityList = mockCityList();
         City city = new City("Calgary", "Alberta");
 
-        assertTrue(cityList.hasCity(city));
+        assertFalse(cityList.hasCity(city));
     }
 }
