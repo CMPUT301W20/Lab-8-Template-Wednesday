@@ -100,7 +100,6 @@ class CityListTest {
         CityList cityList = mockCityList();
 
         cityList.add(new City("Calgary", "Alberta"));
-        cityList.add(new City("Edmonton", "Alberta"));
         cityList.add(new City("Red Deer", "Alberta"));
         cityList.add(new City("Regina", "Saskatchewan"));
 

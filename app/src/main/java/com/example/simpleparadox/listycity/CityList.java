@@ -79,10 +79,19 @@ public class CityList {
     }
 
 
+    /**
+     * Returns the number of cities from city list which reside in province
+     * @param province
+     * @return count
+     */
 
     public int countProvinceCities (String province) {
-        // functionality not in place
         int count = 0;
+        for (City c : cities) {
+            if ( c.getProvinceName() == province ) {
+                count++;
+            }
+        }
         return count;
     }
 }
