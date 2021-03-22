@@ -57,7 +57,7 @@ class CityListTest {
         City city = new City("Yellowknife", "Northwest Territories");
         cityList.add(city);
 
-        assertEquals(0,cityList.getPos(city));
+        assertEquals(1,cityList.getPos(city));
 
     }
 
