@@ -93,4 +93,20 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
+
+
+    @Test
+    void testCountProvinceCities() {
+        CityList cityList = mockCityList();
+
+        // done
+
+        cityList.add(new City("Calgary", "Alberta"));
+        cityList.add(new City("Red Deer", "Alberta"));
+        cityList.add(new City("Regina", "Saskatchewan"));
+
+        assertEquals(3, cityList.countProvinceCities("Alberta"));
+    }
+
+
 }
