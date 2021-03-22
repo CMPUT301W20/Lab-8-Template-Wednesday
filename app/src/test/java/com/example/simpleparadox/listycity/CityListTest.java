@@ -16,6 +16,7 @@ class CityListTest {
     private City mockCity() {
         return new City("Edmonton", "Alberta");
     }
+    private City city2() {return new City ("RandomCity","randomProvince");}
 
     @Test
     void testAdd() {
@@ -97,6 +98,6 @@ class CityListTest {
     @Test
     void testNotHaveCity(){
         CityList cityList = mockCityList();
-        assertFalse(cityList.hasCity(mockCity()));
+        assertFalse(cityList.hasCity(city2()));
     }
 }
