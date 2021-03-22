@@ -98,16 +98,13 @@ class CityListTest {
     @Test
     void testFail(){
         CityList cityList = mockCityList();
-
-        City city = new City("Victoria", "British Columbia");
+        City city = new City("Calgary", "Alberta");
+        cityList.add(city);
+        assertTrue(cityList.hasCity(city));
 
         cityList.delete(city);
-        assertEquals(2, cityList.countCities());
-
-        cityList.delete(mockCity());
-
-        assertEquals(1, cityList.countCities());
-        assertEquals(0, city.compareTo(cityList.getCities().get(0)));
+        assertFalse(cityList.hasCity(city));
+        assertEquals(0, mockCity().compareTo(cityList.getCities().get(0)));
     }
 
 
