@@ -96,8 +96,16 @@ class CityListTest {
 
     @Test
     void testCitiesGreaterThan(){
-        CityList cityList = mockCityList();
-        
-        assertTrue(cityList.citiesGreaterThan());
+        CityList newCityList = mockCityList();
+        City newJersey = new City("New Jersey", "New Jersey");
+        City sarnia = new City("Sarnia", "Ontario");
+        int testInput = 1;
+
+        assertFalse(newCityList.citiesGreaterThan(testInput));
+
+        newCityList.add(newJersey);
+        newCityList.add(sarnia);
+
+        assertTrue(newCityList.citiesGreaterThan(testInput));
     }
 }

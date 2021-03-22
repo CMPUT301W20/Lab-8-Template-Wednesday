@@ -77,4 +77,8 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    public Boolean citiesGreaterThan(int input){
+        return (cities.size() > input);
+    }
 }
