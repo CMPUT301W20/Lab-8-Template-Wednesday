@@ -1,5 +1,7 @@
 package com.example.simpleparadox.listycity;
 
+import java.util.Locale;
+
 public class City implements Comparable<City>{
     private String city;
     private String province;
@@ -20,5 +22,9 @@ public class City implements Comparable<City>{
     @Override
     public int compareTo(City o) {
         return city.compareTo(o.getCityName());
+    }
+
+    public String toString() {
+        return String.format(Locale.CANADA, "%s, %s", city, province);
     }
 }
