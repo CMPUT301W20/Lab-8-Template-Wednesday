@@ -93,4 +93,14 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
+
+    @Test
+    void testIntentional() {
+        // First commit
+//        fail();
+
+        // Second commit
+        assertTrue(true);
+
+    }
 }
