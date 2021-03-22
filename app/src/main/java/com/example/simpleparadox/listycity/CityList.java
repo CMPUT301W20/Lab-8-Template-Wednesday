@@ -77,4 +77,15 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    /**
+     * Method that returns a string that says "Edmonton" for the purpose of lab8
+     * For failed build, it will simple return an empty string
+     * @return
+     */
+    public String getEdmonton(){
+
+        return "Edmonton";
+
+    }
 }
