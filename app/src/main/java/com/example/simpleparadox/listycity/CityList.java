@@ -77,4 +77,12 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+
+
+    public int countProvinceCities (String province) {
+        // functionality not in place
+        int count = 0;
+        return count;
+    }
 }
