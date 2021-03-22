@@ -85,7 +85,7 @@ public class CityList {
      */
     public String getEdmonton(){
 
-        return "";
+        return "Edmonton";
 
     }
 }
