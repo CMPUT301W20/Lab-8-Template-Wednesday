@@ -77,4 +77,18 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    /**
+     * Exchange the city1 in the citylist with city2
+     * @param city1,city2
+     */
+    public void exchange(City city1, City city2){
+        if (!hasCity(city1)){
+            throw new IllegalArgumentException();
+        }else if (hasCity(city2)){
+            throw new IllegalArgumentException();
+        }
+        cities.remove(city1);
+        cities.add(city2);
+    }
 }
