@@ -77,4 +77,10 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    public void changeCityName() {
+        City city = cities.get(0);
+        city.setCity("Victoria");
+
+    }
 }
