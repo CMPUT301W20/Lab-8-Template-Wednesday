@@ -20,7 +20,7 @@ public class CityTest {
         City testCity = mockCity();
         testCity.setNeighbour(mockCity1());
 
-        assertEquals(testCity.getNeighbour.getCityName(),"Calgary");
+        assertEquals(testCity.getNeighbour().getCityName(),"Calgary");
     }
-    
+
 }
