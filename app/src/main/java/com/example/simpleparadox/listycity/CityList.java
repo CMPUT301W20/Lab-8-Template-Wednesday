@@ -50,6 +50,25 @@ public class CityList {
 
         return false;
     }
+    /**
+     * This method tells you the position of the city
+     * @param city
+     *      city to get the position for
+     * @return
+     *      Return the integer position of the city
+     */
+    public int getPos(City city){
+        int pos = 0;
+        for (City c : cities){
+            if (c.getCityName().equals(city.getCityName()) &&
+                    c.getProvinceName().equals(city.getProvinceName())){
+                return pos;
+            }
+            pos = pos + 1;
+        }
+
+        return pos;
+    }
 
     /**
      * Delete the city from the list if it is there
