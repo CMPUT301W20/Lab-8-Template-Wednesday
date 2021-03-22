@@ -93,4 +93,5 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
+
 }
