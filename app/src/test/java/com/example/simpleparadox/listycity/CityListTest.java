@@ -93,4 +93,11 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
+
+    @Test
+    void testCitiesGreaterThan(){
+        CityList cityList = mockCityList();
+        
+        assertTrue(cityList.citiesGreaterThan());
+    }
 }
