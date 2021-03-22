@@ -77,4 +77,17 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    /**
+     * Checks if two cities are from the same province
+     * @param city1
+     *      One candidate city
+     * @param city2
+     *      The other candidate city
+     * @return
+     *      Return true if both candidate cities' province string match
+     */
+    public boolean sameProvince(City city1, City city2) {
+        return city1.getProvinceName().equals(city2.getProvinceName());
+    }
 }
