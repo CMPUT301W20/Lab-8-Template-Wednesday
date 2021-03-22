@@ -1,9 +1,13 @@
 language: android
 jdk: oraclejdk8
+dist: trusty
 
 env:
   global:
-    - ANDROID_TARGET=android-22
+    - ANDROID_API_LEVEL=30
+    - ANDROID_BUILD_TOOLS_VERSION=30.0.0
+    - ANDROID_EMU_API_LEVEL=22
+    - QEMU_AUDIO_DRV=none
     - ANDROID_ABI=armeabi-v7a
 
 android:
@@ -14,7 +18,9 @@ android:
     - platform-tools
 
     # The BuildTools version used by your project
-    - build-tools-23.0.3
+    - build-tools-$ANDRROID_BUILD_TOOLS_VERSION
+    - android-$ANDROID_API_LEVEL
+    - android-$ANDROID_EMU_API_LEVEL
 
     # The SDK version used to compile your project
     # TODO: why is this here explicitly in addition to $ANDROID_TARGET below
@@ -39,7 +45,8 @@ licenses:
 
 before_install:
   # Accept sdk licenses
-  - yes | sdkmanager "platforms;android-29"
+  - yes | sdkmanager "platforms;android-$ANDROID_EMU_API_LEVEL"
+  - yes | sdkmanager "platforms;android-$ANDROID_API_LEVEL"
 
   # Get gradle
   - chmod +x gradlew
