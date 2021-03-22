@@ -21,4 +21,8 @@ public class City implements Comparable<City>{
     public int compareTo(City o) {
         return city.compareTo(o.getCityName());
     }
+
+    public String getFirstLetter(){
+        return String.valueOf(this.city.charAt(0));
+    }
 }
