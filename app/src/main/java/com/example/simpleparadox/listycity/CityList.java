@@ -86,9 +86,9 @@ public class CityList {
      *        city name
      */
 
-//    public void update(City remove, City city, int index){
-//        cities.remove(remove);
-//        cities.add(index, city);
-//
-//   }
+    public void update(City remove, City city, int index){
+        cities.remove(remove);
+        cities.add(index, city);
+
+   }
 }
