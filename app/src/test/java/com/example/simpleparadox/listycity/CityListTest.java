@@ -93,4 +93,19 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
+
+    // New test
+    @Test
+    void testCountCitiesInProvince() {
+        CityList cityList = mockCityList();
+
+        City city = new City("Calgary", "Alberta");
+        cityList.add(city);
+
+        // List should have Calgary and Edmonton as cities with province Alberta
+
+        assertEquals(2, cityList.countCitiesInProvince("Alberta"));
+
+    }
+
 }
