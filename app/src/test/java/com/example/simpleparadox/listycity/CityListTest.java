@@ -93,4 +93,17 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
+
+    @Test
+    void testSameProvince() {
+        CityList cityList = mockCityList();
+        cityList.add(new City("Calgary", "Alberta"));
+        assertEquals(2, cityList.countCities());
+
+        City edmonton = cityList.getCities().get(0);
+        City calgary = cityList.getCities().get(1);
+
+        assertTrue(sameProvince(edmonton, calgary));
+
+    }
 }
