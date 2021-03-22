@@ -77,4 +77,13 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+
+
+    public String getCityAndProvince(City city) {
+        String result = String.format("%s, %s", city.getCityName(), city.getProvinceName());
+        return result;
+    }
+
+
 }
