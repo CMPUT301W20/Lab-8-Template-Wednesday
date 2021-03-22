@@ -84,10 +84,10 @@ public class CityList {
      *      True is size of city list is at least 5, otherwise return false
      */
     public boolean fiveCities() {
-        if (cities.size() < 5) {
-            return false;
-        } else {
+        //if (cities.size() < 5) {
+        //    return false;
+        //} else {
             return true;
-        }
+        //}
     }
 }
