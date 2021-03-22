@@ -93,4 +93,10 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
+
+    @Test
+    void testClearCityList() {
+        CityList cityList = mockCityList();
+        assertEquals(0, cityList.countCities());
+    }
 }
