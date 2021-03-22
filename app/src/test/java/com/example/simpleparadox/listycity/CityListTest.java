@@ -103,18 +103,7 @@ class CityListTest {
 
         cityList.add(city1);
         assertEquals(true, cityList.hasCity(city2));
-        //cityList.add(city2);
 
     }
 
-    @Test
-    void failTest () {
-        City city1 = new City( "edm", "ab");
-        City city2 = new City ("edm" , "ab");
-        CityList cityList = new CityList();
-
-
-        cityList.add(city1);
-        assertEquals(false, cityList.hasCity(city2));
-    }
 }
