@@ -49,6 +49,22 @@ class CityListTest {
     }
 
     @Test
+    void testGetPos(){
+        CityList cityList = mockCityList();
+
+        assertEquals(0,cityList.getPos(mockCity()));
+
+        City city = new City("Yellowknife", "Northwest Territories");
+        cityList.add(city);
+
+        assertEquals(0,cityList.getPos(city));
+
+    }
+
+
+
+
+    @Test
     void testGetCities() {
         CityList cityList = mockCityList();
 
