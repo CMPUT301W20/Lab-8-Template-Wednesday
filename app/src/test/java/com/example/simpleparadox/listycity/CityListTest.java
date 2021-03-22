@@ -93,4 +93,26 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
+
+    @Test
+    void testUpdateCity(){
+        CityList cityList = mockCityList();
+
+        assertEquals(1, cityList.countCities());
+
+        City city1 = new City("Changsha", "Hunan");
+        City city2 = new City("Shenzhen", "Guangdong");
+
+        cityList.add(city1);
+
+        assertEquals(2, cityList.countCities());
+        assertTrue(cityList.hasCity(new City("Changsha", "Hunan")));
+
+        cityList.exchange(city1,city2);
+
+        assertEquals(2, cityList.countCities());
+        assertFalse(cityList.hasCity(new City("Changsha", "Hunan")));
+        assertTrue(cityList.hasCity(new City("Shenzhen", "Guangdong")));
+
+    }
 }
