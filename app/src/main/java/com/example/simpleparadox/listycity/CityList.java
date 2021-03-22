@@ -22,6 +22,11 @@ public class CityList {
         cities.add(city);
     }
 
+    public City getCity(int index){
+         City city = cities.get(index);
+         return city;
+    }
+
     /**
      * This returns a sorted list of cities
      * @return
@@ -67,6 +72,22 @@ public class CityList {
                 break;
             }
         }
+    }
+
+    /**
+     * Duplicates the city list
+     *
+     * @param cityList
+     *      City to be duplicated
+     * @return
+     *      CityList object that is duplicated
+     */
+    public CityList duplicate(CityList cityList){
+        CityList duplicatee = new CityList();
+        for(int i = 0; i < cityList.countCities(); i++){
+            duplicatee.add(cityList.getCity(i));
+        }
+        return duplicatee;
     }
 
     /**

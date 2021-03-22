@@ -93,4 +93,19 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
+
+    @Test
+    void testDuplicateCities() {
+        CityList cityList1 = mockCityList();
+        CityList cityList2 = mockCityList();
+
+        City city = new City ("Winnipeg", "Manitoba");
+        cityList1.add(city);
+
+        cityList2 = cityList2.duplicate(cityList1);
+        assertEquals(2, cityList1.countCities());
+        assertEquals(2, cityList2.countCities());
+        assertTrue(cityList2.hasCity(city));
+
+    }
 }
