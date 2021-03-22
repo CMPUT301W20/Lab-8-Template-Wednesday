@@ -99,6 +99,8 @@ class CityListTest {
     void testCountProvinceCities() {
         CityList cityList = mockCityList();
 
+        // done
+
         cityList.add(new City("Calgary", "Alberta"));
         cityList.add(new City("Red Deer", "Alberta"));
         cityList.add(new City("Regina", "Saskatchewan"));
