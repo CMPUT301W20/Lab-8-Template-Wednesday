@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class CityListTest {
 
@@ -92,5 +93,18 @@ class CityListTest {
         CityList cityList = mockCityList();
 
         assertEquals(1, cityList.countCities());
+    }
+
+
+    @Test
+    void testSameProvince() {
+        CityList cityList = mockCityList();
+        cityList.add(new City("Calgary", "Alberta"));
+        assertEquals(2, cityList.countCities());
+
+        City edmonton = cityList.getCities().get(0);
+        City calgary = cityList.getCities().get(1);
+
+        assertTrue(cityList.sameProvince(edmonton, calgary));
     }
 }
