@@ -93,4 +93,18 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
+
+    @Test
+    void getCityAndProvince() {
+        //lab exercise 8 test
+        CityList cityList = mockCityList();
+
+        City city = new City("Victoria", "British Columbia");
+        cityList.add(city);
+
+        assertEquals("Victoria, British Columbia", cityList.getCityAndProvince(city));
+
+    }
+
+
 }
