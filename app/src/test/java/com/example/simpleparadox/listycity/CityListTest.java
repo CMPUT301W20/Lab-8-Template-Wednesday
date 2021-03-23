@@ -93,4 +93,14 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
+
+    @Test
+    void testCountDeletedCities() {
+        CityList cityList = mockCityList();
+        cityList.add(new City("Ottawa", "ON"));
+        cityList.delete(cityList.getCities().get(0));
+        assertEquals(1, cityList.countDeletedCities());
+        cityList.delete(cityList.getCities().get(0));
+        assertEquals(2, cityList.countDeletedCities());
+    }
 }

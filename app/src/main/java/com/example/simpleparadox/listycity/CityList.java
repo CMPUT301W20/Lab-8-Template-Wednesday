@@ -9,6 +9,7 @@ import java.util.List;
  */
 public class CityList {
     private List<City> cities = new ArrayList<>();
+    private int numberOfCitiesDeleted = 0;
 
     /**
      * This adds a city to the list if the city does not exist
@@ -64,6 +65,7 @@ public class CityList {
         for (City c : cities) {
             if (c.compareTo(city) == 0){
                 cities.remove(c);
+                numberOfCitiesDeleted++;
                 break;
             }
         }
@@ -77,4 +79,11 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    /**
+     * Returns the total count of cities being removed
+     * @return
+     *      An integer representing the number of cities being deleted if any
+     */
+    public int countDeletedCities() { return numberOfCitiesDeleted; }
 }
