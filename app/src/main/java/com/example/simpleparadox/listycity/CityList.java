@@ -77,4 +77,16 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+
+    /**
+     * Changes first city information.
+     * @param cityName
+     * @param provinceName
+     */
+    public void changeFirstCity(String cityName,String provinceName) {
+        City city = cities.get(0);
+        city.setCity(cityName);
+        city.setProvince(provinceName);
+    }
 }
