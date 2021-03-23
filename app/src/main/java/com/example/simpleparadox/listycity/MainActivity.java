@@ -27,13 +27,13 @@ public class MainActivity extends AppCompatActivity {
 
         cityList = findViewById(R.id.city_list);
 
-        String []cities ={"Edmonton", "Vancouver", "Toronto", "Hamilton", "Denver", "Los Angeles"};
-        String []provinces = {"AB", "BC", "ON", "ON", "CO", "CA"};
+        String[] cities = {"Edmonton", "Vancouver", "Toronto", "Hamilton", "Denver", "Los Angeles"};
+        String[] provinces = {"AB", "BC", "ON", "ON", "CO", "CA"};
 
 
         cityDataList = new ArrayList<>();
 
-        for(int i=0;i<cities.length;i++){
+        for (int i = 0; i < cities.length; i++) {
             cityDataList.add((new City(cities[i], provinces[i])));
         }
 
@@ -49,8 +49,5 @@ public class MainActivity extends AppCompatActivity {
 //        cityList.setAdapter(cityAdapter);
 
 
-
     }
-
-
 }

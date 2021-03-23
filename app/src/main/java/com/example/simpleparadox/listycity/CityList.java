@@ -77,4 +77,9 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    public void resetCityAtZero(){
+        City city = new City("New city", "New province");
+        cities.set(0, city);
+    }
 }
